@@ -1,0 +1,116 @@
+<div class="row">
+		<div class="container-fluid">
+			<div class="col-sm-8 col-sm-offset-2">
+				
+				<div class="col-sm-9">
+					<p class="text-right welcome-text newFont">
+						<span id="h1">Welcome to Team Paliwal!</span>
+						<span id="h2"><br>We're a comprehensive team of REALTORs serving the GTA.</span>
+					<br>	
+				</div>
+				<div class="col-sm-3">
+					<br>
+					<img src="imgs/full-logo-on-white.jpg" class="lrgLogo">
+					<br>
+					<br>
+				</div>
+				
+				<div class="col-sm-12 newFont text-center">
+					<span class="welcome-text-small">This website will provide you with listings of the hotest pre-construction and new projects in the GTA, along with market news and professional advice.</span>
+					</p>
+					<hr>
+				</div>
+				
+				
+					
+				<br>	
+				<!-- MAP IMAGE -->
+				<div class="col-sm-4 thumbnail">
+			        <img src="imgs/sml-map.jpg">
+		        </div>
+		        <div class="col-sm-8 toCenter">
+		        	<p class="text-center sml-map-text newFont">Click below to view a comprehensive, visual listing of all projects in the Greater Toronto Area.</p>
+		        	<button ng-click="ctrl.toMap()" class="mapBtn btn btn-default newFont">View Map of Projects</button>
+		        </div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Banner + spacing before Projects Listed -->
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="projects-banner text-center">
+				<a id="projects"></a>
+				<h3 class="projects-title newFont">Projects' Listing</h3>
+			</div>
+		</div>
+	</div>
+
+	<!-- PROJECTS' LISTINGS -->
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<div class="spacing-projects"></div>
+			<!-- HIGH-RISE PROJECTS -->
+			<div class="col-sm-6 text-center newFont">
+				<h3><strong>High-Rise Projects</strong></h3>
+				<br>
+				<div class="project-box">
+					<!-- Some image, then starting price, location, name, more info button -->
+					<div class="thumbnail thumbnailHover" ng-repeat="condo in ctrl.projectSrv.condoProjects"><div ng-click="ctrl.openModal(condo.name)">
+						<p class="text-left project-name">{{condo.name}}</p>
+						<img src="{{condo.img}}" class="projects-imgs">
+						<div class="project-text-div">
+							<p class="project-text-left">{{condo.location}}</p>
+							<p class="project-text-right">Starting From: {{condo.price}}</p>
+						</div>
+						<br>
+					</div></div>
+					
+				</div>
+			</div>
+			<!-- RESIDENTIAL PROJECTS -->
+			<div class="col-sm-6 text-center newFont">
+				<h3><strong>Residential Projects</strong></h3>
+				<br>
+				<div class="project-box">
+					<!-- Some image, then starting price, location, name, more info button -->
+					<div ng-click="ctrl.openModal(condo.name)" class="thumbnail thumbnailHover" ng-repeat="condo in ctrl.projectSrv.resProjects">
+						<p class="text-left project-name">{{condo.name}}</p>
+						<img src="{{condo.img}}" class="projects-imgs">
+						<div class="project-text-div">
+							<p class="project-text-left">{{condo.location}}</p>
+							<p class="project-text-right">Starting From: {{condo.price}}</p>
+						</div>
+						<br>
+					</div>
+					<br>
+					
+				</div>
+			</div>
+
+
+			<!-- PROJECT DATA MODAL -->
+			<div id="myModal" class="modal">
+			  <div class="modal-content">
+			    <span class="close">x</span>
+			    <h2 class="text-center">{{ctrl.currProj.name}}</h2>
+			    <br>
+			    <div class="row">
+			    	<div class="col-sm-6">
+			    		<img class="modal-img" src="{{ctrl.currProj.img}}">
+			    	</div>
+			    	<div class="col-sm-6">
+			    		<h3>Location: {{ctrl.currProj.location}}</h3>
+			    		<h3>Prices starting from: {{ctrl.currProj.price}}</h3>
+			    		<h3>Occupancy from: {{ctrl.currProj.occupancy}}</h3>
+		    		</div>
+			    </div>
+			    
+			    <p class="text-center newFont"></p>
+			  </div>
+			</div>
+
+		</div>
+	</div>
+	</div>

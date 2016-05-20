@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+/*font-family: 'Roboto Condensed', sans-serif;*/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+/*font-family: 'Raleway', sans-serif;*/
+
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+/*font-family: 'Poiret One', cursive;*/
+
+.above-nav {
+	height: 35px;
+}
+
+.above-nav .left {
+	
+	position: absolute;
+	left: 25px;
+	top: 5px;
+	font-size: 19px;
+	color: #1E23B1;
+}
+
+.above-nav .right {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	font-size: 18px;
+	color: #1E23B1;
+}
+
+.navbar {
+	background-color: black;
+	height: 140px;
+	border-bottom: 7px solid #1E23B1;
+	margin-right: -20px;
+}
+
+.nav-left img {
+	padding-top: 10px;
+	
+}
+
+.nav-left p {
+	color: #FAFAFA;
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.nav-right li {
+	display: inline;
+	padding: 16px 15px;
+
+	list-style-type: none;
+	list-style-position:inside;
+	font-size: 22px;
+	color: white;
+
+	font-family: 'Raleway', sans-serif;
+}
+
+.nav-right {
+	position: absolute;
+	top: 50px;
+	right: 10px;
+}
+
+
+
+
+/*FONTS*/
+.newFont {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+

@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+/*font-family: 'Roboto Condensed', sans-serif;*/
+
+.blog-title {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 37px;
+}
+
+.blog-tags {
+	position: absolute;
+	top: 37px;
+	right:10px;
+}
+
+.blog-tags li {
+	display: inline;
+	/*padding: 16px 15px;*/
+	padding-left: 26px;
+
+	list-style-type: none;
+	list-style-position:inside;
+
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 16px;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}

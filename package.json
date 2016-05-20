@@ -1,0 +1,15 @@
+{
+  "name": "teampaliwal_projects_page",
+  "version": "1.0.0",
+  "description": "Projects Site for Team Paliwal",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "ypaliwal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}

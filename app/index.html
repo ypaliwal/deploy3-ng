@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TEAM Paliwal | Toronto, Oakville, Mississauga Real Estate Projects</title>
+
+	<!-- CSS STYLING (VENDOR AND OWN) -->
+	<link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/blog.css">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+	<link rel="stylesheet" type="text/css" href="css/map.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
+
+
+	<!-- VENDOR JS -->
+	<!-- <script type="text/javascript" src="js/vendor/jquery-1.12.2.js"></script> -->
+	<script type="text/javascript" src="js/vendor/angular.js"></script>
+	<script type="text/javascript" src="js/vendor/angular-ui-router.js"></script>
+	<!-- <script src="js/vendor/angular-route.js"></script> -->
+
+
+	<!-- APP.JS AND CONTROLLERS -->
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="site/controllers/main.ctrl.js"></script>
+	<script type="text/javascript" src="site/controllers/map.ctrl.js"></script>
+	<script type="text/javascript" src="site/controllers/about.ctrl.js"></script>
+
+
+	<!-- SERVICES -->
+	<script type="text/javascript" src="site/services/projects.srv.js"></script>
+
+</head>
+
+<body ng-app="TPapp">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="above-nav col-sm-8 col-sm-offset-2">
+				<span class="left newFont">contact@teampaliwal.com</span>
+				<span class="right newFont">416.823.1248</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- NAVBAR (LOGO, BUTTONS) -->
+	<div class="row">
+	<div class="container-fluid">
+		<nav class="navbar  ">
+				<div class="col-sm-8 col-sm-offset-2">
+					<div class="nav-left">
+						<a ui-sref="main"><img src="imgs/logo.png"></a>
+						<div><p>Pre-Construction Buyers' Guide</p></div>
+					</div>
+					<div class="nav-right">
+						<ul>
+							<a ui-sref="main"><li>Projects</li></a>
+							<a ui-sref="about"><li>About</li></a>
+							<a ui-sref="blog"><li>Blog</li></a>
+						</ul>
+					</div>
+				</div>
+		</nav>
+	</div>
+	</div>
+
+	<div ui-view class="wrapper"></div>
+	
+
+	<!-- - Add modal - add fake map, create fake map (thumbnail it)
+	- Add routing
+	- Create basic pages for About and Blog (just test page is good)
+	- Create images for Projects listings -->
+
+	<!-- FOOTER -->
+	<footer>
+		
+	</footer>
+
+
+</body>
+</html>

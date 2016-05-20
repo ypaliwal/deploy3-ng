@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
+/*'Roboto Condensed', sans-serif;*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+/*font-family: 'Roboto Condensed', sans-serif;*/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+/*font-family: 'Raleway', sans-serif;*/
+
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+/*font-family: 'Poiret One', cursive;*/
+
+.welcome-text {
+	font-size: 28px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	margin-left: 55px;
+	margin-right: 55px;
+}
+
+.text-right {
+	text-align: right;
+}
+
+sdlfalk;sdfj
+
+#h1 {
+	font-size: 40px;
+}
+
+#h2 {
+	font-size: 30px;
+}
+
+.lrgLogo {
+	width: 210px;
+	height: auto;
+}
+
+.welcome-text-small {
+	font-size: 19px;
+}
+
+.sml-map-text {
+	font-size: 20px;
+	padding-top: 60px;
+}
+.inverted {
+	filter: invert(100%);
+}
+
+.thumbnail {
+	border: 1px solid #fff;
+}
+
+div.thumbnailHover:hover {
+	z-index: 1000;
+	background: white;
+	opacity: 0.8;
+}
+
+.toCenter {
+	text-align: center;
+}
+
+.mapBtn {
+	margin-top: 25px;
+	font-size: 25px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.projects-banner {
+	margin-top: 20px;
+	height: 170px;
+	background-color: black;
+}
+
+.projects-title {
+	padding-top: 55px;
+	font-size: 48px; 
+	color: white;
+}
+
+.spacing-projects {
+	height: 10px;
+}
+
+caption {
+	text-align: left;
+	font-size: 18px;
+}
+
+.projects-imgs {
+	max-height: 145px;
+	width: 100%;	
+}
+
+.text-left {
+	text-align: left;
+}
+
+.project-name {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.project-text-div {
+	/*display:inline;
+	word-wrap: break-word;*/
+}
+
+.project-text-left {
+	float: left;
+	text-align: left;
+	font-size: 16px;
+}
+
+.project-text-right {
+	font-size: 16px;
+	float: right;
+}
+
+/*MODAL CSS*/
+.modal-img {
+	display:block;
+    margin:auto;
+    max-height: 200px;
+}
+
+
+
+
+
+/*FONTS*/
+.newFont {
+	font-family: 'Source Sans Pro', sans-serif;
+}
